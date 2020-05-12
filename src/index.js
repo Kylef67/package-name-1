@@ -1,7 +1,7 @@
-const crypto = require("crypto");
+import crypto from "crypto";
 
 const myRandom = () => {
   return crypto.randomBytes(16).toString("hex");
 };
 
-module.exports = myRandom;
+export default myRandom;
